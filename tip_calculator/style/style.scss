@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+$cyan: hsl(172, 67%, 45%);
+$vdcyan: hsl(183, 100%, 15%);
+$dgcyan: hsl(186, 14%, 43%);
+$gcyan: hsl(184, 14%, 56%);
+$lgcyan: hsl(185, 41%, 84%);
+$vlgcyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+@mixin input {
+    background-color: $vlgcyan;
+    padding: 10px;
+    color: $vdcyan;
+    font-size: 24px;
+    border-radius: 5px;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+        margin: 0 10px 0 0;
+        border: none;
+        background-color: $vlgcyan;
+        width: 80%;
+        text-align: right;
+        font-size: 24px;
+        font-family: 'Space Mono', monospace;
+        color: $vdcyan;
+    }
+    input::placeholder{
+        color: $gcyan;
+    }
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+    
+    
+}
+
+@mixin btnstyle {
+    background-color: $vdcyan;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    border-radius: 5px;
+    color: $white;
+    border: none;
+    padding: 5px; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $lgcyan;
+    font-family: 'Space Mono', monospace;
+}
+main{
+    text-align: center;
+.logo{
+    margin: 50px 0;
+    width: 85px;
+}}
+ 
+.container{
+    width: 300px;
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: left;
+    h1{
+        font-size: 15px;
+        color: $dgcyan;
+        margin: 0 0 5px 0;
+    }
+
+    .bill-amount, .num-people{
+        margin: 0 0 35px 0;
+        img{
+            height: 100%;
+        }
+        p{
+            @include input()
+        }
+
+    .tip-select{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
+        margin: 0 0 35px 0;
+        button{
+            @include btnstyle()
+        }
+        .custom{
+            background-color: $vlgcyan;
+            color: $dgcyan;
+        }
+        
+    }
+
+    .total-calc{
+        background-color: $vdcyan;
+        padding: 30px 20px 20px 20px;
+        margin: 35px 0 0 0;
+        border-radius: 20px;
+        h2{
+            color: $white;
+            font-size: 15px;
+            margin: 10px 0 0 0;
+        }
+        p{
+            color: $dgcyan;
+            font-size: 12px;
+        }
+        button{
+            background-color: $cyan;
+            font-size: 24px;
+            font-family: 'Space Mono', monospace;
+            width: 100%;
+            border-radius: 5px;
+            color: $vdcyan;
+            border: none;
+            padding: 5px; 
+            margin: 20px 0 0 0;
+            text-transform: uppercase;
+            
+        }
+        .calc{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .bold{
+                color: $cyan;
+                font-size: 24px;
+                text-align: right;
+            }
+        }
+    }
+}
+

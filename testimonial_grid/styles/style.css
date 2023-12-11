@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed+DM+Sans:wght@200;300;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(0deg, 0%, 81%);
+}
+
+.container {
+  width: 315px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 30px;
+}
+
+.bold {
+  margin: 15px 0;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+.profile {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+}
+.profile img {
+  width: 35px;
+  border-radius: 20px;
+  border: 3px solid hsl(210deg, 46%, 95%);
+  grid-row: 1/span 2;
+  margin: 0 10px 0 0;
+}
+
+.section1 {
+  background-color: hsl(263deg, 55%, 52%);
+  border-radius: 10px;
+  padding: 30px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 13px;
+  font-stretch: semi-condensed;
+  box-shadow: hsla(0deg, 0%, 36%, 0.555) 2px 3px 8px;
+}
+
+.section2 {
+  background-color: hsl(217deg, 19%, 35%);
+  border-radius: 10px;
+  padding: 30px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 13px;
+  font-stretch: semi-condensed;
+  box-shadow: hsla(0deg, 0%, 36%, 0.555) 2px 3px 8px;
+}
+
+.section3 {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+  padding: 30px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 13px;
+  font-stretch: semi-condensed;
+  box-shadow: hsla(0deg, 0%, 36%, 0.555) 2px 3px 8px;
+  color: hsl(219deg, 29%, 14%);
+}
+
+.section4 {
+  background-color: hsl(219deg, 29%, 14%);
+  border-radius: 10px;
+  padding: 30px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 13px;
+  font-stretch: semi-condensed;
+  box-shadow: hsla(0deg, 0%, 36%, 0.555) 2px 3px 8px;
+}
+
+.section5 {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+  padding: 30px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 13px;
+  font-stretch: semi-condensed;
+  box-shadow: hsla(0deg, 0%, 36%, 0.555) 2px 3px 8px;
+  color: hsl(219deg, 29%, 14%);
+}
+
+.attribution {
+  font-size: 10px;
+  margin: 0;
+  color: #000;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.attribution > a {
+  color: hsl(263deg, 55%, 52%);
+  text-decoration: none;
+}
+
+.attribution > a:hover {
+  color: hsl(219deg, 29%, 14%);
+}
+
+@media only screen and (min-width: 980px) {
+  /*desktop view*/
+  .container {
+    width: 1050px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .container .section1 {
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 120px;
+    grid-column: 1/span 2;
+  }
+  .container .section2 {
+    grid-column: 3;
+  }
+  .container .section3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .container .section4 {
+    grid-column: 2/span 2;
+    grid-row: 2;
+  }
+  .container .section5 {
+    grid-row: 1/span 2;
+    grid-column: 4;
+  }
+}/*# sourceMappingURL=style.css.map */

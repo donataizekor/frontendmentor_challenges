@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=DM+Sans&family=Lexend+Deca&display=swap');
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    overflow-y: scroll;
+    /* to centre the card element */
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.container{
+    width: 200px;
+    font-size: 16px;
+}
+
+.container h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 25px;
+    color: hsl(0, 0%, 95%);
+    margin: 0;
+}
+
+.container p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 0 0 15px 0 ;
+}
+
+.box{
+    padding: 20px 25px;
+    line-height: 1.7;
+}
+
+.box img{
+    width: 40px;
+}
+
+.box1{
+    border-radius: 5px 5px 0 0;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.box2{
+    background-color: hsl(184, 100%, 22%)
+}
+
+.box3{
+    border-radius:  0 0 5px 5px;
+    background-color: hsl(179, 100%, 13%)
+}
+
+.button{
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 8px 15px;
+    font-size: 10px;
+    border: none;
+    border-radius: 25px;
+    margin: 0 0 5px 0;
+    transition: .3s ease-in; /** smoother transition*/
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: hsla(0, 0%, 95%, 0);
+    color:hsl(0, 0%, 95%);
+    outline: 1px solid hsl(0, 0%, 95%); /*to avoid odd transition*/   
+}
+
+.btn1{
+    color: hsl(31, 77%, 52%);
+}
+
+.btn2{
+    color: hsl(184, 100%, 22%);
+}
+
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution{
+    font-size: 10px;
+    margin: 20px 0 0 0;
+    color: #000;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.attribution a{
+ 
+    color: hsl(31, 77%, 52%);
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    color: rgb(122, 122, 122);
+}
+
+@media only screen and (min-width: 980px) {
+    body{
+        top: 50%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 564px;
+
+    }
+
+    .box1{
+        border-radius: 5px 0 0 5px;
+        background-color: hsl(31, 77%, 52%);
+    
+    }
+
+    .box3{
+        border-radius:  0 5px 5px 0;
+        background-color: hsl(179, 100%, 13%);
+        
+    }
+
+    .container p{
+        margin: 0 0 50px 0;
+    }
+
+}

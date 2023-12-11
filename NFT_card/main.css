@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap');
+
+
+body{
+    background-color: #0d1a2d;
+    /* to centre the card element */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.card{
+    font-family: 'Outfit', sans-serif;
+    font: 18px;
+    color: #fff;
+    background-color: #15273F;
+    border-radius: 5px;
+    width: 250px;
+    padding: 20px;   
+}
+
+.main_img{
+    height: 250px;
+    border-radius: 5px;
+}
+
+.overlay_img{
+   height: 25px;
+}
+
+.overlay{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 5px;
+    height: 250px;
+    width: 250px;
+    opacity: 0; /* for image to not show at first */
+    transition: .5s ease-in-out;
+    background-color: #00fff781;
+}
+
+.overlay_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+  }
+
+.container:hover .overlay{
+    opacity: 1; /* for image to show when hover on */
+    cursor: pointer;
+}
+
+h1{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h1:hover{
+    color: #00FFF8;
+    cursor: pointer;
+}
+
+.description, .of{
+    font-weight: 100;
+}
+
+ul{
+    display: inline-flex;
+    padding: 0; /* to remove empty space left from the bullet point */
+}
+
+li{
+    list-style-type: none;
+}
+
+.price{
+    font-weight: 500;
+    color: #00FFF8;
+}
+
+.icon{
+    height: 12px;
+    margin: 0 auto;
+}
+
+.time{
+    font-weight: 100;
+    margin-left: 70px;
+}
+
+hr{
+    height:1px;
+    border-width:0; /* to make line really thin */
+    background-color:rgba(255, 255, 255, 0.5)
+}
+
+.simple_grid{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center; /* to vertically center text in the grid */
+}
+
+.avatar{
+    height: 25px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.name{
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0;
+}
+
+.name_hover:hover{
+    color:#00FFF8;
+    cursor: pointer;
+}
+
+.of{
+    margin: 0 0 0 8px;
+}
+
+.attribution{
+    font-size: 10px;
+    margin: 20px 0 0 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.attribution a{
+ 
+    color: #fff;
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    color: #00FFF8;
+}

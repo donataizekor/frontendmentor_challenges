@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700;800&display=swap');
+
+$heading: hsl(179, 62%, 43%);
+$sndbgd: hsl(179, 47%, 52%);
+$subheading: hsl(71, 73%, 54%);
+$bodytxt: hsl(204, 43%, 93%);
+$sndbodytxt: hsl(218, 22%, 67%);
+
+@mixin bgdColor($color){
+    background-color: ($color);
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+.container{
+    width: 330px;
+    margin: 50px auto; /* centering main content*/
+    border-radius: 5px;
+    box-shadow: hsl(0, 0%, 60%) 2px 3px 10px;
+    font-size: 14px;
+    
+    .article{
+        padding: 20px 30px;
+        h1{
+            font-size: 18px;
+        }
+    }
+
+    .article1{
+        color: $sndbodytxt;
+        h1{
+            color: $heading;
+        }
+        p{
+            line-height: 2;
+        }
+    }
+
+    .article2{
+        @include bgdColor($heading);
+        color: $bodytxt;
+        .price{
+            display: flex;
+            align-items: center;
+        }
+        .bold{
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0 15px 0 0;
+        }
+        .thin{
+            font-weight: 200;
+        }
+    }
+
+    .article3{
+        @include bgdColor($sndbgd);
+        color: $bodytxt;
+        p{
+            line-height: .5;
+        }
+    }
+
+    h2{
+        font-size: 14px;
+        margin: 20px 0 0 0;
+        color: $subheading;
+    }
+
+    button{
+        color: $bodytxt;
+        background-color: $subheading;
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 14px;
+        font-family: 'Karla', sans-serif;
+        box-shadow: hsla(0, 0%, 36%, 0.555) 2px 3px 8px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.attribution{
+    font-size: 10px;
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.attribution > a{
+    color: $sndbodytxt;
+    text-decoration: none;
+}
+
+.attribution > a:hover{
+    color: $subheading;
+}
+
+@media only screen and (min-width:980px) { /*desktop view*/
+    .container{
+        width: 565px;
+        display: flex;
+        flex-wrap: wrap;
+  
+        .article{
+            padding: 30px;
+            button{
+                margin: 10px 0 0 0;
+
+            }
+        }
+
+        .article2{
+            flex: 1;
+        }
+
+        .article3{
+            flex: 1;
+        }
+        h1{
+            margin: 0 0 20px 0;
+        }
+    }
+}

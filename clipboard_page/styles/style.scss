@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=DM+Sans&display=swap');
+
+$cyan: hsl(171, 66%, 44%);
+$blue: hsl(233, 100%, 69%);
+$grayish: hsl(210, 10%, 33%);
+$grayish2: hsl(201, 11%, 66%);
+
+@mixin button-styling{
+    font-family: 'Bai Jamjuree', sans-serif;
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 15px 0;
+    background-color: $cyan;
+    box-shadow: 0px 3px hsl(171, 67%, 30%), 0px 3px 10px hsl(171, 67%, 30%);
+}
+
+@mixin button-styling-mobile{
+    width: 230px;
+    margin: 8px;   
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    width: 310px;
+    background-image: url("../images/bg-header-mobile.png");
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    padding: 0 30px;
+    h1{
+        // margin: 0 30px 20px 30px;
+        margin: 0 0 20px 0;
+        color: $grayish;
+        font-size: 30px;
+    }
+    h2{
+        color: $grayish; 
+        font-size: 27px;
+        margin: 120px 0 20px 0; 
+    }
+    h3{
+        color: $grayish;
+        margin: 50px 0 10px 0;
+        font-size: 24px;
+        
+    }
+    p{
+        color: $grayish2;
+        line-height: 1.7;
+        font-size: 16px;
+        margin: 0 0 25px 0;
+        // margin: 0 30px 25px 30px;
+    }
+    .header-logo{
+        margin: 120px auto 50px auto;
+        width: 120px; 
+    }
+    button{
+        @include button-styling();
+    }
+    .mac{
+        @include button-styling();
+        background-color: $blue;
+        box-shadow: 0 3px hsl(233, 43%, 46%), 0 3px 10px hsl(233, 43%, 46%);
+    }
+    .img-ctr{
+        width: 310px;
+    }
+    .img-icon{
+        margin: 50px 0 0 0;
+    }
+    .grid{
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: center;
+        row-gap: 65px;
+        margin: 140px 0;
+        img{
+            width: 130px;
+        }
+    }
+    .bottom{
+        margin: 15px 0 180px 0;
+    }
+}
+
+footer{
+    background-color: hsl(0, 0%, 97%);;
+    width: 310px;
+    padding: 0 30px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    .footer-logo{
+        width: 55px;
+        margin: 50px auto 20px auto;
+    }
+    .grid2-footer{
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    a{
+        color: $grayish;
+        text-decoration: none;
+        font-size: 18px;
+    
+    }
+    .social{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 50px auto;
+        width: 180px;
+    }
+
+    .attribution{
+        font-size: 10px;
+        margin: 0;
+        color: #000;
+        text-align: center;
+        font-family: 'DM Sans', sans-serif;
+        a{
+            font-size: 10px;
+            color: $grayish2;
+            text-decoration: none;
+        &:hover{
+            color: $cyan;
+        }
+        }
+    }
+}
+
+@media only screen and (min-width: 980px) { /*desktop view*/
+    .container{
+        background-image: url("../images/bg-header-desktop.png");
+        width: 1400px;
+        // padding: 0;
+        h1{
+            font-size: 45px;
+        }
+        h2{
+            margin: 150px 0 20px 0;  
+            font-size: 35px;
+        }
+        p{
+            font-size: 20px;
+            width: 52%;
+            margin: 0 auto 35px auto;
+        }
+        button, .mac{
+            @include button-styling-mobile()
+        }
+        .position{
+            text-align: left;
+            left: 0;
+        }
+        .img-ctr{
+            width: 900px;
+        }
+        .grid-body{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
+    footer{
+        width: 1400px;
+        .grid-footer{
+            grid-template-columns: auto auto;
+            column-gap: 40px;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(27deg, 66%, 92%);
+}
+
+.container {
+  width: 320px;
+  margin: 80px auto;
+}
+.container .balance {
+  background-color: hsl(10deg, 79%, 65%);
+  padding: 18px;
+  margin: 0 0 5% 0;
+  border-radius: 10px;
+  color: hsl(33deg, 100%, 98%);
+  display: flex;
+  justify-content: space-between;
+}
+.container .balance h1 {
+  font-weight: 400;
+  font-size: 15px;
+}
+.container .balance p {
+  margin: 5px 0 0 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.container .spending {
+  background-color: hsl(33deg, 100%, 98%);
+  padding: 18px;
+  border-radius: 10px;
+}
+.container .spending h1 {
+  font-size: 22px;
+  color: hsl(25deg, 47%, 15%);
+}
+.container .monthly-total {
+  color: hsl(25deg, 47%, 15%);
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.container .monthly-total .thin {
+  color: hsl(28deg, 10%, 53%);
+  font-size: 13px;
+}
+.container .monthly-total .bold {
+  font-size: 25px;
+  font-weight: 700;
+}
+.container .monthly-total .small {
+  text-align: right;
+  margin: 10px 0 0 0;
+  font-size: 15px;
+}
+
+footer {
+  font-size: 10px;
+  margin: 0;
+  color: hsl(25deg, 47%, 15%);
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+footer a {
+  color: hsl(10deg, 79%, 65%);
+  text-decoration: none;
+}
+footer a:hover {
+  color: hsl(186deg, 34%, 60%);
+}/*# sourceMappingURL=style.css.map */

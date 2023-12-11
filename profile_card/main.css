@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    /* to centre the card element */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-size: 100%;
+    background-position: top -250px left -250px, top 350px right -250px; /* to position both images opposite ways */
+    background-repeat: no-repeat, no-repeat;
+}
+
+.container{
+    background-color: #fff;
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 300px;
+    color: hsl(0, 0%, 59%);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.555) 2px 2px 15px;
+}
+
+.age{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.container p{
+    color: hsl(0, 0%, 59%);
+}
+
+.avatar .avatar-pattern{
+    border-radius: 10px 10px 0 0;
+    width: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.avatar .avatar-icon{
+    height: 90px;
+    outline: 4px solid #fff;
+    border-radius: 50px;
+    position: absolute;
+    margin: auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+
+.info{
+    text-align: center;
+    margin: 70px 0 0 0;
+}
+
+.info h1{
+    margin: 20px 0 0 0;
+    font-size: 18px;
+    color:hsl(229, 23%, 23%)
+}
+
+.info p{
+    margin: 5px 0 20px 0;
+}
+
+hr{
+    border: none;
+    height: .1px;
+    background-color: hsla(227, 10%, 46%, 0.4);
+    margin: 0;
+}
+
+.stats{
+    padding: 5px 35px 15px 35px;
+}
+
+ul{
+    display: flex;
+    text-align: center;
+    padding: 0;
+    justify-content: space-between; /*to evently distribute elements in the div*/
+}
+
+li{
+    list-style-type: none; 
+}
+
+h2{
+    color:hsl(229, 23%, 23%);
+    font-size: 18px;
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+li > p {
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+
+.attribution{
+    font-size: 10px;
+    margin: 20px 0 0 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.attribution a{
+ 
+    color: rgb(255, 208, 0);
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    color: #fff;
+}
+
+@media only screen and (min-width: 980px) { /*desktop view*/
+    body{
+        background-size: 60%;
+        background-position: top -450px left -150px, top 300px right -120px;
+    }
+}
+

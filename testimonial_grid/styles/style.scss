@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed+DM+Sans:wght@200;300;500;600&display=swap');
+
+$primary: hsl(263, 55%, 52%);
+$primary2: hsl(217, 19%, 35%);
+$primary3: hsl(219, 29%, 14%);
+$primary4: hsl(0, 0%, 100%);
+
+$neutral: hsl(0, 0%, 81%);
+$neutral2:  hsl(210, 46%, 95%);
+
+@mixin styling{
+    border-radius: 10px;
+    padding: 30px;
+    color: $primary4;
+    font-size: 13px;
+    font-stretch: semi-condensed;
+    box-shadow: hsla(0, 0%, 36%, 0.555) 2px 3px 8px;
+}
+
+@mixin photo{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;   
+    img{
+        width: 35px;
+        border-radius: 20px;
+        border: 3px solid $neutral2;
+        grid-row: 1 / span 2;
+        margin: 0 10px 0 0;
+    } 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: $neutral;
+}
+
+.container{
+    width: 315px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 30px;
+}
+
+.bold{
+    margin: 15px 0;
+    font-size:19px;
+    font-weight: 600;
+    // font-stretch: extra-condensed;
+}
+
+.thin{
+    font-weight: 200;
+}
+
+.profile{
+    @include photo();
+}
+
+.section1{
+    background-color: $primary;
+    @include styling();
+}
+
+.section2{
+    background-color: $primary2;
+    @include styling();
+}
+
+.section3{
+    background-color: $primary4;
+    @include styling();
+    color: $primary3;  
+}
+
+.section4{
+    background-color: $primary3;
+    @include styling();
+}
+
+.section5{
+    background-color: $primary4;
+    @include styling();
+    color: $primary3;
+}
+
+.attribution{
+    font-size: 10px;
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.attribution > a{
+    color: $primary;
+    text-decoration: none;
+}
+
+.attribution > a:hover{
+    color: $primary3;
+}
+
+@media only screen and (min-width:980px) { /*desktop view*/
+    .container{
+        width: 1050px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        
+        .section1{
+            background-image: url('../images/bg-pattern-quotation.svg');
+            background-repeat: no-repeat;
+            background-position: top right 120px;
+            grid-column: 1/ span 2;
+        }
+
+        .section2{
+            grid-column: 3; //not really necessary but i can so..
+        }
+
+        .section3{
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .section4{
+            grid-column: 2 / span 2;
+            grid-row: 2;
+        }
+
+        .section5{
+            grid-row: 1/ span 2;
+            grid-column: 4
+        }
+
+        
+
+    
+    }
+
+}

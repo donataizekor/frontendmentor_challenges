@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$sred: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+$dbrown: hsl(25, 47%, 15%);
+$mbrown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$vporange: hsl(33, 100%, 98%);
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    background-color: $cream;
+}
+
+.container{
+    width: 320px;
+    margin: 80px auto;
+    .balance{
+        background-color: $sred;
+        padding: 18px;
+        margin: 0 0 5% 0;
+        border-radius: 10px;
+        color: $vporange;
+        display: flex;
+        justify-content: space-between;
+        h1{
+            font-weight: 400;
+            font-size: 15px;
+        }
+        p{
+            margin: 5px 0 0 0;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    .spending{
+        background-color: $vporange;
+        padding: 18px;
+        border-radius: 10px;
+        h1{
+            font-size: 22px;
+            color: $dbrown;
+        }
+    }
+    .monthly-total{
+        color: $dbrown;
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        .thin{
+            color: $mbrown;
+            font-size: 13px;
+        }
+        .bold{
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .small{
+            text-align: right;
+            margin: 10px 0 0 0;
+            font-size: 15px;
+        }
+    }
+}
+
+footer{
+    font-size: 10px;
+    margin: 0;
+    color: $dbrown;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    a{
+        color: $sred;
+        text-decoration: none;
+    &:hover{
+        color: $cyan;
+    }
+    }
+}
+
+

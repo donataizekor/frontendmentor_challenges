@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Libre+Franklin:wght@300;600;700&display=swap');
+
+$blue: hsl(223, 87%, 63%);
+$pblue: hsl(223, 100%, 88%);
+$lred: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+$vdblue: hsl(209, 33%, 12%);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    background-color: black;
+}
+
+
+
+.container{
+    width: 230px;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: center;
+    background-color: white;
+    height: 100vh;
+    overflow: hidden;
+    .logo{
+        width: 40px;
+        margin: 60px auto 20px auto;
+    }
+    h1{
+        font-weight: 300;
+        font-size: 20px;
+        color: $gray;
+        padding: 5px 0 0 0;
+        .bold{
+            font-weight: 700;
+            color: $vdblue;
+        }
+    }
+    p{
+        font-size: 10px;
+        padding: 15px 0;
+    }
+    form{
+        width: 100%;
+    }
+    input{
+        border-radius: 20px;
+        padding: 5px;
+        width: 100%;
+        
+    }
+}

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(185deg, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+
+main {
+  text-align: center;
+}
+main .logo {
+  margin: 50px 0;
+  width: 85px;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: left;
+}
+.container h1 {
+  font-size: 15px;
+  color: hsl(186deg, 14%, 43%);
+  margin: 0 0 5px 0;
+}
+.container .bill-amount, .container .num-people {
+  margin: 0 0 35px 0;
+}
+.container .bill-amount img, .container .num-people img {
+  height: 100%;
+}
+.container .bill-amount p, .container .num-people p {
+  background-color: hsl(189deg, 41%, 97%);
+  padding: 10px;
+  color: hsl(183deg, 100%, 15%);
+  font-size: 24px;
+  border-radius: 5px;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .bill-amount p input, .container .num-people p input {
+  margin: 0 10px 0 0;
+  border: none;
+  background-color: hsl(189deg, 41%, 97%);
+  width: 80%;
+  text-align: right;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  color: hsl(183deg, 100%, 15%);
+}
+.container .bill-amount p input::-moz-placeholder, .container .num-people p input::-moz-placeholder {
+  color: hsl(184deg, 14%, 56%);
+}
+.container .bill-amount p input:-ms-input-placeholder, .container .num-people p input:-ms-input-placeholder {
+  color: hsl(184deg, 14%, 56%);
+}
+.container .bill-amount p input::placeholder, .container .num-people p input::placeholder {
+  color: hsl(184deg, 14%, 56%);
+}
+.container .bill-amount p input:focus,
+.container .bill-amount p select:focus,
+.container .bill-amount p textarea:focus,
+.container .bill-amount p button:focus, .container .num-people p input:focus,
+.container .num-people p select:focus,
+.container .num-people p textarea:focus,
+.container .num-people p button:focus {
+  outline: none;
+}
+.container .bill-amount:hover, .container .num-people:hover {
+  border: 2px solid cyan;
+}
+.container .tip-select {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 15px;
+  margin: 0 0 35px 0;
+}
+.container .tip-select button {
+  background-color: hsl(183deg, 100%, 15%);
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  width: 100%;
+  border-radius: 5px;
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  padding: 5px;
+}
+.container .tip-select .custom {
+  background-color: hsl(189deg, 41%, 97%);
+  color: hsl(186deg, 14%, 43%);
+}
+.container .total-calc {
+  background-color: hsl(183deg, 100%, 15%);
+  padding: 30px 20px 20px 20px;
+  margin: 35px 0 0 0;
+  border-radius: 20px;
+}
+.container .total-calc h2 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 15px;
+  margin: 10px 0 0 0;
+}
+.container .total-calc p {
+  color: hsl(186deg, 14%, 43%);
+  font-size: 12px;
+}
+.container .total-calc button {
+  background-color: hsl(172deg, 67%, 45%);
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  width: 100%;
+  border-radius: 5px;
+  color: hsl(183deg, 100%, 15%);
+  border: none;
+  padding: 5px;
+  margin: 20px 0 0 0;
+  text-transform: uppercase;
+}
+.container .total-calc .calc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container .total-calc .calc .bold {
+  color: hsl(172deg, 67%, 45%);
+  font-size: 24px;
+  text-align: right;
+}/*# sourceMappingURL=style.css.map */

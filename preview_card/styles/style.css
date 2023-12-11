@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 390px;
+  margin: 50px auto;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+}
+.container .desktop {
+  display: none;
+}
+.container .mobile {
+  width: 390px;
+  border-radius: 10px 10px 0 0;
+}
+.container h1 {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 21%, 14%);
+}
+.container .container2 {
+  padding: 20px 35px;
+}
+.container .container2 p {
+  color: hsl(228deg, 12%, 48%);
+  font-size: 14px;
+  margin-top: 15px;
+  line-height: 1.7;
+}
+.container .container2 .upper {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin: 0;
+}
+.container .container2 .price-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.container .container2 .price-flex .price {
+  color: hsl(158deg, 36%, 37%);
+  margin-right: 20px;
+}
+.container .container2 .price-flex .price2 {
+  text-decoration: line-through;
+  margin: 0;
+}
+.container .container2 button {
+  width: 100%;
+  background-color: hsl(158deg, 36%, 37%);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: hsl(0deg, 0%, 100%);
+  margin: 0;
+}
+.container .container2 button:hover {
+  cursor: pointer;
+}
+.container .container2 button img {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.attribution {
+  font-size: 10px;
+  margin: 0;
+  color: #000;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.attribution > a {
+  color: hsl(158deg, 36%, 37%);
+  text-decoration: none;
+}
+
+.attribution > a:hover {
+  color: hsl(228deg, 12%, 48%);
+}
+
+@media only screen and (min-width: 980px) {
+  /*desktop view*/
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 430px;
+  }
+  .container .desktop {
+    display: inline;
+    width: 300px;
+    height: 430px;
+    border-radius: 10px 0 0 10px;
+  }
+  .container .mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
